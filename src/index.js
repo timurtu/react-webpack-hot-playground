@@ -9,11 +9,11 @@ const store = configureStore()
 
 const render = Component => {
   ReactDOM.render(
-    <AppContainer>
-      <Provider store={store}>
+    <Provider store={store}>
+      <AppContainer>
         <Component/>
-      </Provider>
-    </AppContainer>,
+      </AppContainer>
+    </Provider>,
     document.getElementById('root')
   )
 }
